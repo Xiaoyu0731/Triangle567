@@ -1,6 +1,10 @@
+sudo: false
 language: python
-python: 
- - "3.6"
-  #command to run test
+python:
+  - 2.7
+install:
+  - pip install codecov
 script:
- - python -m unittest TestTriangle
+  - coverage run TestTriangle.py
+after_success:
+  - codecov
