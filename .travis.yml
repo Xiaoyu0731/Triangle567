@@ -4,18 +4,15 @@ python:
   #command to run test
 script:
  - python -m unittest TestTriangle
+  - sonar-scanner
 
 dist: trusty
 sudo: required
 
 addons:
  sonarcloud:
- organization: "teamX-ssw567-triangle567"
- token: your-token-goes-here
+ organization: "xli119567triangle"
+ token: xli119567triangle
  branches:
  - sonarcloud
- 
-# add the sonar-scanner command after all the other commands that you already have
-script:
-...
- - sonar-scanner
+
