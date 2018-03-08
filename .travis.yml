@@ -2,17 +2,20 @@ language: python
 python: 
  - "3.6"
   #command to run test
-script:
- - python -m unittest TestTriangle
-  - sonar-scanner
-
+  
 dist: trusty
 sudo: required
 
 addons:
  sonarcloud:
- organization: "xli119567triangle"
- token: xli119567triangle
+ organization: "team6ssw567triangle"
+ token: 
+  secure: team6ssw567
  branches:
  - sonarcloud
+
+script:
+ - python -m unittest TestTriangle
+  - sonar-scanner
+
 
