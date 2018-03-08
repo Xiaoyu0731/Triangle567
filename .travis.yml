@@ -10,7 +10,7 @@ addons:
  sonarcloud:
  organization: "team6ssw567triangle"
  token: 
-  secure: team6ssw567
+  secure: team6ssw567triangle
  branches:
  - sonarcloud
 
