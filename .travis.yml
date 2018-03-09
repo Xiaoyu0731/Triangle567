@@ -11,6 +11,7 @@ addons:
  organization: "team6ssw567triangle"
  token: bbf4f6dfff53e347635576e0a78db12ea64726ab
  branches:
+ - master
  - sonarcloud
 
 script:
